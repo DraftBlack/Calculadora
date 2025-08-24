@@ -1,3 +1,5 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { Calculadora } from './calculadora/calculadora';
+export const routes: Routes = [
+    { path: '', component: Calculadora }
+];

@@ -1,0 +1,24 @@
+<div class="calculadora">
+    <div class="visor">{{ displayValue() }}</div>
+  
+    <div class="teclado">
+      <button class="operador" (click)="onClearClick()">AC</button>
+      <button class="operador" (click)="onDeleteClick()">DEL</button>
+      <button class="operador" (click)="onOperatorClick('/')">/</button>
+      <button class="operador" (click)="onOperatorClick('*')">*</button>
+      <button (click)="onNumberClick('7')">7</button>
+      <button (click)="onNumberClick('8')">8</button>
+      <button (click)="onNumberClick('9')">9</button>
+      <button class="operador" (click)="onOperatorClick('-')">-</button>
+      <button (click)="onNumberClick('4')">4</button>
+      <button (click)="onNumberClick('5')">5</button>
+      <button (click)="onNumberClick('6')">6</button>
+      <button class="operador" (click)="onOperatorClick('+')">+</button>
+      <button (click)="onNumberClick('1')">1</button>
+      <button (click)="onNumberClick('2')">2</button>
+      <button (click)="onNumberClick('3')">3</button>
+      <button class="igual" (click)="onEqualClick()">=</button>
+      <button class="zero" (click)="onNumberClick('0')">0</button>
+      <button (click)="onDecimalClick()">.</button>
+    </div>
+  </div>
