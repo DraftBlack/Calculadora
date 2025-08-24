@@ -111,4 +111,25 @@ export class Calculadora {
       this.displayValue.set('0');
     }
   }
+
+  public onPercentageClick(): void {
+    // Pega o valor que está no visor e converte para número
+    const currentValue = parseFloat(this.displayValue());
+
+    // Se não houver uma operação em andamento (nenhum primeiro operando)
+    // a porcentagem age sobre o próprio número. Ex: 50% se torna 0.5
+    if (this.firstOperand() === null) {
+      this.displayValue.set(String(currentValue / 100));
+      return;
+    }
+
+    // Se HOUVER uma operação (ex: 200 - 10%), a porcentagem é calculada
+    // em cima do primeiro operando.
+    // Ex: 10% de 200 = 20
+    const percentageOfFirstOperand = this.firstOperand()! * (currentValue / 100);
+
+    // Atualiza o visor com o valor da porcentagem calculada (ex: 20)
+    // Agora o cálculo pendente é 200 - 20. Se o usuário clicar em "=", o resultado será 180.
+    this.displayValue.set(String(percentageOfFirstOperand));
+  }
 }
