@@ -35,7 +35,7 @@ button {
   padding: 20px;
   font-size: 1.5rem;
   border: none;
-  background-color: #a80909;
+  background-color: #454b15;
   cursor: pointer;
   transition: background-color 0.2s;
 
@@ -45,21 +45,21 @@ button {
 }
 
 .operador {
-  background-color: #22086e;
+  background-color: #5e3f06;
   color: white;
 
   &:hover {
-    background-color: #2f00ffda;
+    background-color: #252525da;
   }
 }
 
 .igual {
   grid-row: span 2;
-  background-color: #160549;
+  background-color: #5e3f06;
   color: white;
 
   &:hover {
-    background-color: #2606b6da;
+    background-color: #254115da;
   }
 }
 
