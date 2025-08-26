@@ -55,12 +55,11 @@ button {
 
 .igual {
   grid-row: span 2;
-  background-color: #06437a;
+  background-color: #abdbe3;
   color: white;
 
   &:hover {
-    background-color: #06437a
-  ;
+    background-color: #abdbe3;
   }
 }
 
