@@ -55,7 +55,7 @@ button {
 
 .igual {
   grid-row: span 2;
-  background-color: #5e3f06;
+  background-color: #06437a;
   color: white;
 
   &:hover {
