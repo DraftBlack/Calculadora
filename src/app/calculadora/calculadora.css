@@ -59,7 +59,8 @@ button {
   color: white;
 
   &:hover {
-    background-color: #254115da;
+    background-color: #06437a
+  ;
   }
 }
 
